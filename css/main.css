@@ -3,6 +3,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    transition: 0.3s;
 }
 
 /* Убираем внутренние отступы */
@@ -80,4 +81,18 @@ select {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+@font-face {
+    font-family: 'Fishmonger MS Plain';
+    src: url('../fonts/Fishmonger MS Plain.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tabula ITC Std Black';
+    src: url('../fonts/Tabula ITC Std Black.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

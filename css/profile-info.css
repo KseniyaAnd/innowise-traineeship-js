@@ -1,0 +1,67 @@
+.profile-info__container {
+    display: flex;
+    margin: 400px 70px 0;
+    padding: 20px;
+    background-color: rgba(49, 51, 86, 0.60);
+    border-radius: 20px;
+    gap: 30px;
+}
+
+.profile-info__details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-info__name {
+    color: white;
+    font-family: "Fishmonger MS Plain", sans-serif;
+}
+
+.profile-info__image {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: -120px;
+    border: rgb(8, 12, 72) solid 5px;
+}
+
+.profile-info__list {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-info__item {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-info__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.profile-info__text {
+    color: rgb(182, 182, 182);
+    font-family: "Tabula ITC Std Black", sans-serif;
+}
+
+.user-profile__button-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.user-profile__button {
+    background-color: rgb(8, 12, 72);
+    color: rgb(182, 182, 182);
+    font-family: "Tabula ITC Std Black", sans-serif;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.user-profile__button:hover {
+    background-color: rgb(58, 62, 134);
+}
