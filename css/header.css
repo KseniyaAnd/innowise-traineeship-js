@@ -1,0 +1,21 @@
+.header {
+    padding: 30px 70px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 150px;
+}
+
+.header__profile {
+    width: 64px;
+    border-radius: 50%;
+}
