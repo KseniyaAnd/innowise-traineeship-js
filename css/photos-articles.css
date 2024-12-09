@@ -1,0 +1,53 @@
+.photos-articles {
+    width: 50%;
+}
+
+.photos-articles__container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 70px;
+    padding: 20px;
+    background-color: rgba(49, 51, 86, 0.60);
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.photos-articles__tabs {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: "Fishmonger MS Plain", sans-serif;
+}
+
+.photos-articles__tab {
+    cursor: pointer;
+}
+
+.photos-articles__content {
+    display: flex;
+    gap: 5px;
+}
+
+.photos-articles__content-unit {
+    width: 220px;
+}
+
+.photos-articles__button-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.photos-articles__button {
+    background-color: rgb(8, 12, 72);
+    color: rgb(182, 182, 182);
+    font-family: "Tabula ITC Std Black", sans-serif;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.photos-articles__button:hover {
+    background-color: rgb(58, 62, 134);
+}
