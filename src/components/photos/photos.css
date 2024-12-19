@@ -1,8 +1,8 @@
-.photos-articles {
+.photos {
     width: 50%;
 }
 
-.photos-articles__container {
+.photos__container {
     display: flex;
     flex-direction: column;
     margin: 20px 10px 0 70px;
@@ -12,33 +12,33 @@
     gap: 20px;
 }
 
-.photos-articles__tabs {
+.photos__tabs {
     display: flex;
     justify-content: space-between;
     color: white;
     font-family: "Fishmonger MS Plain", sans-serif;
 }
 
-.photos-articles__tab {
+.photos__tab {
     cursor: pointer;
 }
 
-.photos-articles__content {
+.photos__content {
     display: flex;
     gap: 5px;
 }
 
-.photos-articles__content-unit {
+.photos__content-unit {
     width: 220px;
 }
 
-.photos-articles__button-wrapper {
+.photos__button-wrapper {
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.photos-articles__button {
+.photos__button {
     background-color: rgb(8, 12, 72);
     color: rgb(182, 182, 182);
     font-family: "Tabula ITC Std Black", sans-serif;
@@ -48,6 +48,6 @@
     cursor: pointer;
 }
 
-.photos-articles__button:hover {
+.photos__button:hover {
     background-color: rgb(58, 62, 134);
 }
