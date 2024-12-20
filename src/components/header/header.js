@@ -1,13 +1,12 @@
-export default async function fetchChar() {
-    let response = await fetch('https://rickandmortyapi.com/api/character/404');
-
-    if (response.ok) {
-        let json = await response.json();
-        console.log(json)
-
-    } else {
-        alert("Ошибка HTTP: " + response.status);
-    }
-
+export default function header() {
+    return `
+        <div class="header__container">
+            <div class="header__logo-container">
+                <img class="header__logo" src="../../img/logo.png" alt="Logo"/>
+            </div>
+            <div class="header__profile-container">
+                <img class="header__profile" src="../../img/avatar.png" alt="Profile"/>
+            </div>
+        </div>
+    `
 }
-
