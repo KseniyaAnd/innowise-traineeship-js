@@ -1,0 +1,53 @@
+.edit-profile-modal {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+
+    z-index: 3;
+}
+
+.edit-profile-modal__content {
+    background-color: rgba(49, 51, 86, 0.60);
+    padding: 20px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.edit-profile-modal__container {
+    display: flex;
+    gap: 40px;
+}
+
+.edit-profile-modal__image {
+    width: 200px;
+    border-radius: 50%;
+    border: rgb(8, 12, 72) solid 5px;
+}
+
+.edit-profile-modal__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.edit-profile-modal__form {
+    font-family: "Tabula ITC Std Black", sans-serif;
+    color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.edit-profile-modal__input {
+    border-radius: 20px;
+    background-color: rgb(182, 182, 182);
+    color: rgb(255, 255, 255);
+    font-family: "Fishmonger MS Plain", sans-serif;
+
+    padding-left: 10px;
+}

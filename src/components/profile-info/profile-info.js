@@ -25,7 +25,7 @@ export default function profileInfo() {
                 </div>
         
                 <div class="user-profile__button-wrapper">
-                    <button class="user-profile__button">
+                    <button class="user-profile__button custom__button">
                         Edit profile
                     </button>
                 </div>
