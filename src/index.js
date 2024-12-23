@@ -13,6 +13,7 @@ import setUserInfo from "./utils/setUserInfo";
 import setModalInputs from "./utils/setModalInputs";
 import openModal from "./utils/openModal";
 import setFriends from "./utils/setFriends";
+import setPhotos from "./utils/setPhotos";
 //import dragElement from "./utils/drugElement";
 
 
@@ -39,6 +40,7 @@ changeProfileName('edit-profile-modal__input', mainProfileCode);
 setUserInfo(service, mainProfileCode)
 setModalInputs(service, mainProfileCode);
 setFriends(service, [34,523,32,31,134,128,432,231,436,37,242,111])
+setPhotos(service, [2,7,12,61,74,89,40,39,46,3,22,11])
 
 document.getElementsByClassName('user-profile__button')[0].addEventListener('click', () => openModal('edit-profile-modal'));
 document.getElementsByClassName('edit-profile-modal__button')[0].addEventListener('click', () => openModal('edit-profile-modal'));

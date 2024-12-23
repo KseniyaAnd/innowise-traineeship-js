@@ -7,18 +7,7 @@ export default function photos() {
                 </p>
             </div>
             <div class="photos__content">
-                <div class="photos__content-unit">
-                    <img src="img/pic-1.png"/>
-                </div>
-                <div class="photos__content-unit">
-                    <img src="img/pic-1.png"/>
-                </div>
-                <div class="photos__content-unit">
-                    <img src="img/pic-1.png"/>
-                </div>
-                <div class="photos__content-unit">
-                    <img src="img/pic-1.png"/>
-                </div>
+                
             </div>
             <div class="photos__button-wrapper">
                 <button class="photos__button">

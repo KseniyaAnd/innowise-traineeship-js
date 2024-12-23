@@ -24,12 +24,14 @@
 }
 
 .photos__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    //display: flex;
     gap: 5px;
 }
 
 .photos__content-unit {
-    width: 220px;
+    width: 110px;
 }
 
 .photos__button-wrapper {
