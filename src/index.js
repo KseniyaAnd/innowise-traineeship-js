@@ -3,16 +3,18 @@ import changeProfileIcon from "./utils/changeProfileIcon"
 import changeProfileName from "./utils/changeProfileName"
 import setLocation from "./utils/setLocation";
 import setStatus from "./utils/setStatus"
+import setSpecies from "./utils/setSpecies";
 
 import header from "./components/header/header"
 import profileInfo from "./components/profile-info/profile-info";
 import photos from "./components/photos/photos";
 import friends from "./components/friends/friends";
-import setSpecies from "./utils/setSpecies";
+import editProfileModal from "./components/edit-profile-modal/edit-profile-modal"
 
 
 loadComponent('.header', header(), './components/header/header.css');
 loadComponent('.header', header() , './css/main.css');
+loadComponent('.edit-profile-modal', editProfileModal() , './components/edit-profile-modal/edit-profile-modal.css');
 loadComponent('.profile-info', profileInfo(), './components/profile-info/profile-info.css');
 loadComponent('.photos', photos(), './components/photos/photos.css');
 loadComponent('.friends', friends(), './components/friends/friends.css');
