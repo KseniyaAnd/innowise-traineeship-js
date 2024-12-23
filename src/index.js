@@ -12,16 +12,18 @@ import editProfileModal from "./components/edit-profile-modal/edit-profile-modal
 import setUserInfo from "./utils/setUserInfo";
 import setModalInputs from "./utils/setModalInputs";
 import openModal from "./utils/openModal";
+import setFriends from "./utils/setFriends";
+//import dragElement from "./utils/drugElement";
 
 
 loadComponent('.header', header(), './components/header/header.css');
-loadComponent('.header', header() , './css/main.css');
-loadComponent('.edit-profile-modal', editProfileModal() , './components/edit-profile-modal/edit-profile-modal.css');
+loadComponent('.header', header(), './css/main.css');
+loadComponent('.edit-profile-modal', editProfileModal(), './components/edit-profile-modal/edit-profile-modal.css');
 loadComponent('.profile-info', profileInfo(), './components/profile-info/profile-info.css');
 loadComponent('.photos', photos(), './components/photos/photos.css');
 loadComponent('.friends', friends(), './components/friends/friends.css');
 
- //const mainProfileCode = 10;
+//const mainProfileCode = 10;
 //const mainProfileCode = 329;
 const mainProfileCode = 43;
 
@@ -36,9 +38,8 @@ changeProfileName('edit-profile-modal__input', mainProfileCode);
 
 setUserInfo(service, mainProfileCode)
 setModalInputs(service, mainProfileCode);
+setFriends(service, [34,523,32,31,134,128,432,231,436,37,242,111])
 
-const userProfileButton = document.getElementsByClassName('user-profile__button')[0];
-const modalSaveButton = document.getElementsByClassName('edit-profile-modal__button')[0];
+document.getElementsByClassName('user-profile__button')[0].addEventListener('click', () => openModal('edit-profile-modal'));
+document.getElementsByClassName('edit-profile-modal__button')[0].addEventListener('click', () => openModal('edit-profile-modal'));
 
-userProfileButton.addEventListener('click', () => openModal('edit-profile-modal'));
-modalSaveButton.addEventListener('click', () => openModal('edit-profile-modal'));
