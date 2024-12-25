@@ -5,7 +5,6 @@ export default async function setFriends(service, ids) {
     chars.forEach((el) => {
         const div = document.createElement('div');
         div.classList.add('friends__item');
-        console.log(el)
         div.innerHTML =
             `
                 <div class="friends__avatar-container">

@@ -11,13 +11,7 @@ export default class RickMortyService {
     async getCharacters(ids) {
         const response = await fetch(`${this.url}/character/${ids}`);
         if (response.ok) {
-            console.log(response)
             return await response.json();
         }
     }
-
-    // async getCharacters(ids) {
-    //     const response = await fetch(`${this.url}/${ids}`);
-    //
-    // }
 }

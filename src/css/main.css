@@ -96,15 +96,58 @@ select {
     background-color: rgb(58, 62, 134);
 }
 
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(49, 51, 86, 0.60);
+}
+
+.modal-cross {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.modal-cross img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.modal-cross:hover {
+    filter: brightness(70%);
+}
+
+.modal-button {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .none {
     display: none;
 }
 
-.modal-background {
-    width: 100%;
-    height: 100%;
-    filter: brightness(50%);
-}
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {

@@ -1,6 +1,5 @@
 export default function editProfileModal() {
     return `
-        <div class="edit-profile-modal__content none">
             <div class="edit-profile-modal__container">
                 <div class="edit-profile-modal__left">
                     <div class="edit-profile-modal__photo-wrapper">
@@ -30,8 +29,5 @@ export default function editProfileModal() {
                     </form>
                 </div>
             </div>
-            <button class="edit-profile-modal__button custom__button">Save changes</button>
-        </div>
-
     `
 }

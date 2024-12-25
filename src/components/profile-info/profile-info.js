@@ -1,11 +1,10 @@
-export default function profileInfo() {
+export default function profileInfo(content) {
     return `
             <section class="profile-info">
             <div class="profile-info__container">
                 <div class="profile-info__image-wrapper">
                     <img class="profile-info__image" src="img/profile.png" alt="Profile"/>
                 </div>
-        
                 <div class="profile-info__details">
                     <h1 class="profile-info__name">Rick Pickle</h1>
                     <ul class="profile-info__list">
