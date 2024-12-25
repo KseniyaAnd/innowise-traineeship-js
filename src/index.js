@@ -11,10 +11,8 @@ import friends from "./components/friends/friends";
 import editProfileModal from "./components/edit-profile-modal/edit-profile-modal"
 import setUserInfo from "./utils/setUserInfo";
 import setModalInputs from "./utils/setModalInputs";
-import openModal from "./utils/openModal";
 import setFriends from "./utils/setFriends";
 import setPhotos from "./utils/setPhotos";
-import toggleModal from "./utils/openModal";
 import ModalService from "./utils/modal.service";
 //import dragElement from "./utils/drugElement";
 
