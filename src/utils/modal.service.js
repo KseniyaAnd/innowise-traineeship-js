@@ -5,7 +5,6 @@ export default class ModalService {
     modal = document.getElementsByClassName('modal')[0];
 
     createModal(content) {
-        console.log(this.target);
         this.target.innerHTML = content;
     }
 

@@ -33,36 +33,28 @@ const service = new RickMortyService();
 
 changeProfileIcon('header__profile', mainProfileCode);
 changeProfileIcon('profile-info__image', mainProfileCode);
-//changeProfileIcon('edit-profile-modal__image', mainProfileCode);
+changeProfileIcon('edit-profile-modal__image', mainProfileCode);
 
 changeProfileName('profile-info__name', mainProfileCode);
-//changeProfileName('edit-profile-modal__input', mainProfileCode);
+changeProfileName('edit-profile-modal__input', mainProfileCode);
 
 setUserInfo(service, mainProfileCode)
 setModalInputs(service, mainProfileCode);
-setFriends(service, Array.from({length: 12}, () => Math.floor(Math.random() * 800)))
+setFriends(service)
 setPhotos(service, Array.from({length: 12}, () => Math.floor(Math.random() * 800)))
-
-//document.getElementsByClassName('user-profile__button')[0].addEventListener('click', () => toggleModal('edit-profile-modal'));
-//document.getElementsByClassName('edit-profile-modal__button')[0].addEventListener('click', () => toggleModal('edit-profile-modal'));
-
-//const clickOutside = require('click-outside');
-
-// clickOutside(container, () => {
-//     if (modalService.visible) {
-//         modalService.hideModal();
-//     }
-// });
 
 const modalService = new ModalService();
 modalService.createModal(editProfileModal());
 
-const openModalButton = document.querySelector('.user-profile__button');
-openModalButton.addEventListener('click', () => {
+document.querySelector('.user-profile__button').addEventListener('click', () => {
     modalService.toggleModal();
 });
 
-const closeModalButton = document.querySelector('.modal-cross');
-closeModalButton.addEventListener('click', () => {
+document.querySelector('.modal-cross').addEventListener('click', () => {
     modalService.toggleModal();
-});
+})
+
+let page = 1;
+document.querySelector('.friends__button').addEventListener('click', () => {
+    setFriends(service, ++page)
+})

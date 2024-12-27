@@ -8,10 +8,27 @@ export default class RickMortyService {
         }
     }
 
-    async getCharacters(ids) {
+    async getCharactersByIds(ids) {
         const response = await fetch(`${this.url}/character/${ids}`);
         if (response.ok) {
             return await response.json();
         }
     }
+
+    async getCharacters(page) {
+        let response;
+        console.log(page);
+
+        if (page) {
+            response = await fetch(`${this.url}/character?page=${page}`);
+        } else {
+            response = await fetch(`${this.url}/character`);
+        }
+
+        if (response.ok) {
+            const jsonData = await response.json();
+            return jsonData.results;
+        }
+    }
+
 }

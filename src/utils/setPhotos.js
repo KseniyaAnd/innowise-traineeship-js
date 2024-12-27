@@ -1,5 +1,5 @@
 export default async function setPhotos(service, ids) {
-    const chars = await service.getCharacters(ids);
+    const chars = await service.getCharactersByIds(ids);
     const target = document.getElementsByClassName('photos__content')[0];
 
     chars.forEach((el) => {

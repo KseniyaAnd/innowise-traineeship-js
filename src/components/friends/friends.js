@@ -4,6 +4,7 @@ export default function friends() {
             <div class="friends__list">
                 
             </div>
+            <button class="friends__button custom__button">Load More</button>
         </div>
     `
 }

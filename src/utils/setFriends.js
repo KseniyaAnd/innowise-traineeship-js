@@ -1,5 +1,5 @@
-export default async function setFriends(service, ids) {
-    const chars = await service.getCharacters(ids);
+export default async function setFriends(service, page) {
+    const chars = await service.getCharacters(page);
     const target = document.getElementsByClassName('friends__list')[0];
 
     chars.forEach((el) => {
