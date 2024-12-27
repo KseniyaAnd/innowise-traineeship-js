@@ -26,12 +26,8 @@
 .photos__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    //display: flex;
-    gap: 5px;
-}
 
-.photos__content-unit {
-    width: 110px;
+    gap: 5px;
 }
 
 .photos__button-wrapper {

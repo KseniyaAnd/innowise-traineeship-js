@@ -14,6 +14,7 @@ import setModalInputs from "./utils/setModalInputs";
 import setFriends from "./utils/setFriends";
 import setPhotos from "./utils/setPhotos";
 import ModalService from "./utils/modal.service";
+import {FriendCardElement} from "./utils/friendCardElement";
 //import dragElement from "./utils/drugElement";
 
 

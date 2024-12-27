@@ -4,7 +4,6 @@ export default async function setPhotos(service, ids) {
 
     chars.forEach((el) => {
         const div = document.createElement('div');
-        div.classList.add('friends__item');
         div.innerHTML =
             `
                 <div class="photos__content-unit">
